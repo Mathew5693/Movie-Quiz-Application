@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Responsive quiz</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>Movie Go-er Quiz</h1>
+
+      <header role="scoreKeeper">
+        <div class="topRight-Question">
+          <li>Question: <span class="questionNum">0</span> out of 10</li>
+          </div>
+        <div class="topLeft-Score">
+          <li>Score: <span class="score">0</span></li>
+        </div>
+      </header>
+
+      <main class="main" role="main">
+        <div class="selectStart">
+          <h2>Are you a movie star?</h2>
+          <h2>Press 'Start' to test your movie knowledge!</h2>
+          <button type="button" class="btn start">Start!</button>
+        </div>
+        <div class="generateQuiz"></div>
+        <div class="quizResults"></div>
+      </main>
+
+    </div><!--CONTAINER-->
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
